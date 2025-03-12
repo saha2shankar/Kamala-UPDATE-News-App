@@ -6,7 +6,7 @@ class NewsService {
   static Future<dynamic> fetchNews() async {
     try {
       var response = await apiHelper.get(
-          'everything?q=tesla&from=2025-01-21&sortBy=publishedAt&apiKey=964a7f114db64586b0d7dd3f6570fcb3');
+          'everything?q=tesla&from=2025-01-21&sortBy=publishedAt&apiKey=your api key here');
       return response;
     } catch (e) {
       debugPrint(e.toString());
